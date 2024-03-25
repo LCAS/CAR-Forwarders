@@ -1,4 +1,8 @@
 __pycache__/
 Config.py
 .~lock*
-*.pyc
+**/*.pyc
+**/*.~
+**/*~
+**/*.swp
+**/*.save
