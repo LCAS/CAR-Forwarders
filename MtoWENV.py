@@ -32,7 +32,7 @@ def main():
     WS_HOST = os.getenv('WEBSOCKET_URL')
 
     # Setup Daemon
-    m = MQTTforwarder(MQTT_HOST, MQTT_PORT, MQTT_USER, MQTT_PASSWORD, MQTT_TOPICS, WS_HOST)
+    m = MQTTforwarder(MQTT_HOST, int(MQTT_PORT), MQTT_USER, MQTT_PASSWORD, MQTT_TOPICS, WS_HOST)
     m.run()
 
 # Call main properly

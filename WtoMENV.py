@@ -36,7 +36,7 @@ def main():
     while True:
         try:
             print('trying to connect from '+WS_HOST+' to '+MQTT_HOST+':'+MQTT_PORT)
-            w = WSforwarder(WS_HOST, MQTT_HOST, MQTT_PORT, MQTT_USER, MQTT_PASSWORD, MQTT_TOPICS)
+            w = WSforwarder(WS_HOST, MQTT_HOST, int(MQTT_PORT), MQTT_USER, MQTT_PASSWORD, MQTT_TOPICS)
             w.run()
         except Exception as e:
             print(e)
